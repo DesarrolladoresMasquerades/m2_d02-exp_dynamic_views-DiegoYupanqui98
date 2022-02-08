@@ -1,0 +1,21 @@
+
+    <h2>Hello this is the index page of {{name}}!</h2>
+    <!-- we don't have to put '/public/images/name-opf-image.jpg' since public
+    is already registered for all static files (stylesheets, images, etc.) -->
+    <img src="/images/ironhack-logo-white.jpg" alt="ironhack logo" width="150" />
+
+    <ol>
+        {{#if adult}}
+        <div>You are old enough to have your own server</div>
+        {{else}}
+        <div>You are too young</div>
+        {{/if}}
+        <li>Test</li>
+        {{#each hobbies}}
+        <li>
+            {{name}}
+        </li>
+        {{/each}}
+    </ol>
+    <h3>I'm {{age}} years old</h3>
+    <a href="/about"> Go to About </a>

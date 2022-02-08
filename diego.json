@@ -1,0 +1,6 @@
+{
+    "name": "Diego",
+    "hobbies": [{"name":"coding"}, {"name":"more coding"}, {"name":"extra coding"}],
+    "age": 23,
+    "adult":true
+}
