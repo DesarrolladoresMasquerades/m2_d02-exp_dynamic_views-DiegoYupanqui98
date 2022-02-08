@@ -1,21 +1,28 @@
+<!-- views/index.hbs -->
+<!-- views/index.hbs -->
 
-    <h2>Hello this is the index page of {{name}}!</h2>
-    <!-- we don't have to put '/public/images/name-opf-image.jpg' since public
-    is already registered for all static files (stylesheets, images, etc.) -->
-    <img src="/images/ironhack-logo-white.jpg" alt="ironhack logo" width="150" />
-
-    <ol>
-        {{#if adult}}
-        <div>You are old enough to have your own server</div>
-        {{else}}
-        <div>You are too young</div>
-        {{/if}}
-        <li>Test</li>
-        {{#each hobbies}}
-        <li>
-            {{name}}
-        </li>
-        {{/each}}
-    </ol>
-    <h3>I'm {{age}} years old</h3>
-    <a href="/about"> Go to About </a>
+<div class="container">
+  <div class="row justify-content-around">
+    <div class="col-md-4">
+      <div class="card">
+        <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_OERZ8iocfWup4uRUhjxY_zncbKN02QawHJMqp9qa2RjC6PaI" alt="NBA players">
+        <div class="card-body">
+          <h5 class="card-title">Players</h5>
+          <p class="card-text">Check the top NBA players, according to Ironhack Curriculum staff.</p>
+          <a href="/players" class="btn btn-primary">See Players</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card">
+        <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_OERZ8iocfWup4uRUhjxY_zncbKN02QawHJMqp9qa2RjC6PaI"
+            alt="NBA teams">
+        <div class="card-body">
+          <h5 class="card-title">Teams</h5>
+          <p class="card-text">Here we can check all NBA Teams</p>
+          <a href="/teams" class="btn btn-primary">See Teams</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

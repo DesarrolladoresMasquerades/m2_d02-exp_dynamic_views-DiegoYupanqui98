@@ -1,0 +1,10 @@
+<!-- views/players.hbs -->
+
+<div class="container">
+  <h1>Players</h1>
+  <div class="row">
+      {{#each players}} 
+        {{> playerCard this}} 
+      {{/each}}
+  </div>
+</div>
